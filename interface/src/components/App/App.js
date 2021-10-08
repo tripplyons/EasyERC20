@@ -20,6 +20,8 @@ export default class App extends React.Component {
           <li>Click "Add to MetaMask" on the popup after confirmation.</li>
         </ol>
         <CreationForm provider={this.state.provider}></CreationForm>
+
+        <p><b>For more complex requests, message me at SKΞWBΞD#1836 on Discord.</b></p>
       </Container>
     );
   }
