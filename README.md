@@ -1,6 +1,8 @@
 # EasyERC20
 Create ERC20 tokens through an easy-to-use decentralized app
 
+[https://easyerc20.com/](https://easyerc20.com/)
+
 ## Roadmap
 
 ### Implemented Features
@@ -8,12 +10,12 @@ Create ERC20 tokens through an easy-to-use decentralized app
 - Token contract
 - Tests for contracts
 - React frontend
+- [Live website](https://easyerc20.com/)
 - Live networks
   - Polygon network (live and verified at [0xd65d608663616c3bdcd20c2e5e679ed1d8dc3f74](https://polygonscan.com/address/0xd65d608663616c3bdcd20c2e5e679ed1d8dc3f74))
 
 ### Unimplemented Features
-- Live website
-- Live networks
+- Additional live networks
   - Ethereum (expensive to deploy to, so probably not anytime soon)
   - Arbitrum
   - BSC
