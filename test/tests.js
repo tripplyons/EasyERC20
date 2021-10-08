@@ -61,8 +61,18 @@ describe("EasyERC20Factory", function () {
     token = await ethers.getContractAt('ERC20', event.args.contractAddress);
   });
 
-  it("Should give the user the supply of the token", async function() {
-    let balance = await token.balanceOf(user.address);
-    expect(balance).to.equal(supply);
+  it("Should reject transactions from other people that try to take the fee", async function() {
+    await expect(factory.connect(maliciousActor).withdrawFees()).to.be.reverted;
+  });
+
+  it("Should let the owner take their fee", async function() {
+    let oldBalance = await owner.getBalance();
+
+    let tx = await factory.connect(owner).withdrawFees();
+    await tx.wait();
+
+    let newBalance = await owner.getBalance();
+
+    expect(newBalance.gt(oldBalance)).to.equal(true);
   });
 });

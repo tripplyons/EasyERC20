@@ -7,11 +7,19 @@ Create ERC20 tokens through an easy-to-use decentralized app
 - Factory contract
 - Token contract
 - Tests for contracts
+- React frontend
+- Live networks
+  - Polygon network (live and verified at [0xd65d608663616c3bdcd20c2e5e679ed1d8dc3f74](https://polygonscan.com/address/0xd65d608663616c3bdcd20c2e5e679ed1d8dc3f74))
 
 ### Unimplemented Features
-- React frontend
+- Live website
+- Live networks
+  - Ethereum (expensive to deploy to, so probably not anytime soon)
+  - Arbitrum
+  - BSC
+  - Avalanche C-Chain
 
-## Development usage
+## Contract development usage
 
 ### Installation
 
@@ -35,8 +43,24 @@ npx hardhat test
 npx hardhat node
 ```
 
-#### To deploy an EasyERC20Factory to the testnet:
+#### To deploy an EasyERC20Factory to the testnet
 
 ```shell
 npx hardhat run --network localhost scripts/deploy.js
+```
+
+## Interface development usage
+
+
+### Installation
+
+```shell
+cd interface
+npm install
+```
+
+### Localhost server
+
+```shell
+npm run start
 ```

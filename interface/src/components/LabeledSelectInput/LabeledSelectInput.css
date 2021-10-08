@@ -1,0 +1,24 @@
+.LabeledSelectInput--container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.LabeledSelectInput--column {
+  flex: 1;
+  padding: 16px;
+}
+
+@media only screen and (max-width: 800px) {
+  .LabeledSelectInput--container {
+    display: inline-block;
+  }
+  .LabeledSelectInput--column {
+    width: 100%;
+  }
+}
+
+.LabeledSelectInput--select-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
