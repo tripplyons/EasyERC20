@@ -13,6 +13,7 @@ export default class App extends React.Component {
     return (
       <Container>
         <h1><a href="https://github.com/tripplyons/EasyERC20">EasyERC20</a></h1>
+        <p>Create ERC20 tokens through an easy-to-use decentralized app</p>
         <h2>Directions</h2>
         <ol>
           <li>Connect to MetaMask and customize your token.</li>
