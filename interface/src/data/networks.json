@@ -6,7 +6,7 @@
     "fee": "10000000000000000000"
   },
   {
-    "name": "Hardhat Testnet (cost 1 testnet ETH)",
+    "name": "Hardhat Testnet (costs 1 testnet ETH)",
     "chainId": 31337,
     "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
     "fee": "1000000000000000000"
