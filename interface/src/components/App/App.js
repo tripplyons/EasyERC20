@@ -22,7 +22,7 @@ export default class App extends React.Component {
         </ol>
         <CreationForm provider={this.state.provider}></CreationForm>
 
-        <p><b>For more complex requests, message me at SKΞWBΞD#1836 on Discord.</b></p>
+        <p><b>For more complex requests, message me at Skewbed#1836 on Discord.</b></p>
       </Container>
     );
   }
