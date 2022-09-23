@@ -3,7 +3,7 @@ Create ERC20 tokens through an easy-to-use decentralized app
 
 [https://easyerc20.com/](https://easyerc20.com/)
 
-For more complex requests, message me at SKΞWBΞD#1836 on Discord.
+For more complex requests, message me at Skewbed#1836 on Discord.
 
 ![Screenshot from EasyERC20.com](screenshot.png)
 
