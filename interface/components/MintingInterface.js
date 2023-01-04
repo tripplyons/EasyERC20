@@ -1,9 +1,20 @@
 import { ConnectKitButton } from "connectkit"
 import NetworkSelector from "./NetworkSelector"
 import { useAccount } from 'wagmi'
+import { useEffect, useState } from "react"
 
 export default function MintingInterface() {
   const { isConnected } = useAccount()
+  const [loaded, setLoaded] = useState(false)
+
+  useEffect(() => {
+    setLoaded(true)
+  }, [])
+
+  // fixes hydration issue
+  if (!loaded) {
+    return null
+  }
 
   return (
     <>
