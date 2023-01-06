@@ -2,6 +2,7 @@ import Head from 'next/head'
 import FontWrapper from '../components/FontWrapper'
 import { NAME, DESCRIPTION } from '../content/metadata'
 import MintingInterface from '../components/MintingInterface'
+import Link from '../components/Link'
 
 export default function Home() {
   return (
@@ -18,7 +19,10 @@ export default function Home() {
             <div className='p-8'>
               <div className='p-8 flex flex-col justify-center items-center'>
                 <h1 className='text-4xl font-medium text-center mb-2'><span className='text-blue-600'>Easy</span>ERC20</h1>
-                <p className='text-center mb-8'>{DESCRIPTION}</p>
+                <p className='text-center'>{DESCRIPTION}</p>
+                <p className='text-center mt-2 mb-8'>
+                  <Link href='https://github.com/tripplyons/EasyERC20'>GitHub</Link>
+                </p>
                 <ol className='list-decimal list-inside'>
                   <li>
                     <strong className='font-medium'>Connect your wallet:</strong>

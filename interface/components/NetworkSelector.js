@@ -10,7 +10,7 @@ export default function NetworkSelector() {
 
   return (
     <div>
-      <h3 className='font-medium text-lg'>Blockchain</h3>
+      <h3 className='font-medium text-lg mt-4'>Blockchain</h3>
       {CHAINS.map((chain, i) => (
         <div key={i}>
           <input
